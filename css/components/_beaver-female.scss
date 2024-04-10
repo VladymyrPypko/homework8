@@ -1,0 +1,36 @@
+.beavers {
+    &__beaver-female {
+        position: absolute;
+        bottom: 16%;
+        left: 13%;
+        width: 11%;
+        height: 11%;
+        background-image: url("../images/beavers/beaver-female/beaver-female-start.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: beaverFemaleMove 1s step-start infinite;
+        z-index: 690;
+    }
+}
+
+@keyframes beaverFemaleMove {
+    0% {
+        background-image: url("../images/beavers/beaver-female/beaver-female-start.png");
+    }
+
+    20% {
+        background-image: url("../images/beavers/beaver-female/beaver-female-end.png");
+    }
+
+    40% {
+        background-image: url("../images/beavers/beaver-female/beaver-female-start.png");
+    }
+
+    60% {
+        background-image: url("../images/beavers/beaver-female/beaver-female-end.png");
+    }
+
+    80% {
+        background-image: url("../images/beavers/beaver-female/beaver-female-start.png");
+    }
+}
