@@ -1,0 +1,28 @@
+.beavers {
+    &__beaver-male {
+        position: absolute;
+        bottom: 16%;
+        left: 8%;
+        width: 15%;
+        height: 12%;
+        background-image: url("../images/beavers/beaver-male/beaver-male-start.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: stickMove 1s step-start infinite;
+        z-index: 700;
+    }
+}
+
+@keyframes stickMove {
+    0% {
+        background-image: url("../images/beavers/beaver-male/beaver-male-start.png");
+    }
+    
+    33% {
+        background-image: url("../images/beavers/beaver-male/beaver-male-mid.png");
+    }
+
+    66% {
+        background-image: url("../images/beavers/beaver-male/beaver-male-end.png");
+    }
+}

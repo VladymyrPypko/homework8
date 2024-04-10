@@ -1,0 +1,112 @@
+.fox {
+    &__burrow {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 25%;
+        height: 25%;
+        background-image: url("../images/fox/burrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: burrowSlideInRight 1s ease-out 59.5s;
+        z-index: 700;
+    }
+
+    &__character {
+        position: absolute;
+        bottom: 3%;
+        right: 15%;
+        width: 15%;
+        height: 15%;
+        background-image: url("../images/fox/fox.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(0);
+        animation: foxSlideInRight 1s ease-out 59s, foxUpDown 2s ease-in-out infinite;
+        z-index: 800;
+    }
+
+    &__bush-right {
+        position: absolute;
+        bottom: 7%;
+        right: 8%;
+        width: 10%;
+        height: 10%;
+        background-image: url("../images/fox/right-bush.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotateZ(0deg);
+        animation: bushRotation 4s step-start 72s;
+        z-index: 710;
+    }
+
+    &__bush-left {
+        position: absolute;
+        bottom: 7%;
+        right: 22%;
+        width: 10%;
+        height: 10%;
+        background-image: url("../images/fox/left-bush.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotateZ(0deg);
+        animation: bushRotation 4s step-start 72s;
+        z-index: 720;
+    }
+}
+
+@keyframes burrowSlideInRight {
+    from {
+        bottom: 10%;
+        right: -50%;
+    }
+
+    to {
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
+@keyframes foxSlideInRight {
+    from {
+        bottom: 3%;
+        right: -20%;
+    }
+
+    to {
+        bottom: 3%;
+        right: 15%;
+    }
+}
+
+@keyframes foxUpDown {
+    from {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bushRotation {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(-4deg);
+    }
+
+    50% {
+        transform: rotateZ(0);
+    }
+
+    75% {
+        transform: rotateZ(4deg);
+    }
+}

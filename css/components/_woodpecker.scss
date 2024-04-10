@@ -1,0 +1,94 @@
+.woodpecker {
+    &__character {
+        position: absolute;
+        bottom: 35%;
+        left: 10%;
+        width: 15%;
+        height: 12%;
+        background-image: url("../images/woodpecker/woodpecker-laughing.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: woodpeckerSlideInLeft 1s ease-out 48s, woodpecker-rotation 3s step-start infinite;
+        transform: rotateZ(0deg);
+        z-index: 700;
+    }
+
+    &__cones {
+        position: absolute;
+        bottom: 35%;
+        left: 10%;
+        width: 2%;
+        height: 2%;
+        background-image: url("../images/woodpecker/cones.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: conesSlideInLeft 1s ease-out 48.5s;
+        z-index: 690;
+    }
+}
+
+@keyframes woodpeckerSlideInLeft {
+    from {
+        bottom: 35%;
+        left: -20%;
+    }
+
+    to {
+        bottom: 35%;
+        left: 10%;
+    }
+}
+
+@keyframes woodpecker-rotation {
+    0% {
+        background-image: url("../images/woodpecker/woodpecker-laughing.png");
+        transform: translateY(0px);
+    }
+
+    12% {
+        background-image: url("../images/woodpecker/woodpecker-laughing.png");
+        transform: translateY(4px);
+    }
+
+    24% {
+        background-image: url("../images/woodpecker/woodpecker-laughing.png");
+        transform: translateY(0px);
+    }
+
+    36% {
+        background-image: url("../images/woodpecker/woodpecker-laughing.png");
+        transform: translateY(4px);
+    }
+
+    48% {
+        background-image: url("../images/woodpecker/woodpecker.png");
+        transform: rotateZ(0deg);
+    }
+
+    60% {
+        background-image: url("../images/woodpecker/woodpecker.png");
+        transform: rotateZ(-8deg);
+    }
+
+    72% {
+        background-image: url("../images/woodpecker/woodpecker.png");
+        transform: rotateZ(0deg);
+    }
+
+    84% {
+        background-image: url("../images/woodpecker/woodpecker.png");
+        transform: rotateZ(-8deg);
+    }
+}
+
+@keyframes conesSlideInLeft {
+    from {
+        bottom: 35%;
+        left: -20%;
+    }
+
+    to {
+        bottom: 35%;
+        left: 10%;
+    }
+}

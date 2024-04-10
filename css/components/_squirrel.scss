@@ -1,0 +1,44 @@
+.squirrel {
+    &__hollow {
+        position: absolute;
+        bottom: 45%;
+        right: 0.5%;
+        z-index: 700;
+        width: 12%;
+        height: 12%;
+        background-image: url("../images/squirrel/hollow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__character {
+        position: absolute;
+        bottom: 45.5%;
+        right: 2.5%;
+        width: 10%;
+        height: 10%;
+        background-image: url("../images/squirrel/squirrel-eating-start.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: carrotMove 2s step-start infinite;
+        z-index: 1000;
+    }
+}
+
+@keyframes carrotMove {
+    0% {
+        background-image: url("../images/squirrel/squirrel-eating-start.png");
+    }
+    
+    25% {
+        background-image: url("../images/squirrel/squirrel-eating-end.png");
+    }
+
+    50% {
+        background-image: url("../images/squirrel/squirrel-eating-start.png");
+    }
+
+    75% {
+        background-image: url("../images/squirrel/squirrel-eating-end.png");
+    }
+}

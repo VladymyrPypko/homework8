@@ -1,0 +1,103 @@
+.sun {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 75px;
+    background-color: #ffde00;
+    border: 1px solid #000;
+    border-radius: 50%;
+    z-index: 9000;
+
+    &__eyes {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 80px;
+        height: 40px;
+        background-image: url("../images/sun/open-eyes.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: eyesMove 1s linear 2s infinite;
+        z-index: 9100;
+    }
+
+    &__mouth {
+        position: absolute;
+        top: 54px;
+        left: 18px;
+        width: 60px;
+        height: 40px;
+        background-image: url("../images/sun/smile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: mouthMove 1.2s step-end 2s infinite;
+        z-index: 9100;
+    }
+
+    &__lights {
+        position: absolute;
+        top: -68%;
+        left: -60%;
+        width: 220px;
+        height: 220px;
+        background-image: url("../images/sun/lights.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(1);
+        animation: lights-rotation 2s ease infinite;
+        z-index: 200;
+    }
+}
+
+.sun:hover {
+    animation: sun-rotation 2s linear infinite;
+}
+
+@keyframes eyesMove {
+    0% {
+        background-image: url("../images/sun/open-eyes.png");
+    }
+    100% {
+        background-image: url("../images/sun/squinted-eyes.png");
+    }
+}
+
+@keyframes mouthMove {
+    0% {
+        background-image: url("../images/sun/smile.png");
+    }
+    25% {
+        background-image: url("../images/sun/mouth1.png");
+    }
+    50% {
+        background-image: url("../images/sun/mouth2.png");
+    }
+    75% {
+        background-image: url("../images/sun/mouth3.png");
+    }
+}
+
+@keyframes lights-rotation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sun-rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}

@@ -1,0 +1,539 @@
+.text-content {
+    &__row {
+        position: absolute;
+        top: 6%;
+        left: 16%;
+        color: transparent;
+        font-family: monospace;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: flashing-border 0.75s step-end infinite;
+        z-index: 850;
+    }
+
+    &__row--1 {
+        width: 23ch;
+        color: transparent;
+        animation: printed-text1 4s ease-out 2s;
+    }
+
+    &__row--2 {
+        width: 26ch;
+        color: transparent;
+        animation: printed-text2 5s ease-out 7s;
+    }
+
+    &__row--3 {
+        width: 44ch;
+        color: transparent;
+        animation: printed-text3 7s ease-out 13s;
+    }
+
+    &__row--4 {
+        width: 24ch;
+        color: transparent;
+        animation: printed-text4 4s ease-out 21s;
+    }
+
+    &__row--5 {
+        width: 70ch;
+        color: transparent;
+        animation: printed-text5 10s ease-out 26s;
+    }
+
+    &__row--6 {
+        width: 52ch;
+        color: transparent;
+        animation: printed-text6 8s ease-out 37s;
+    }
+
+    &__row--7 {
+        width: 22ch;
+        color: transparent;
+        animation: printed-text7 4s ease-out 46s;
+    }
+
+    &__row--8 {
+        width: 39ch;
+        color: transparent;
+        animation: printed-text8 6s ease-out 51s;
+    }
+
+    &__row--9 {
+        width: 24ch;
+        color: transparent;
+        animation: printed-text9 4s ease-out 58s;
+    }
+
+    &__row--10 {
+        width: 43ch;
+        color: transparent;
+        animation: printed-text10 7s ease-out 63s;
+    }
+
+    &__row--11 {
+        width: 37ch;
+        color: transparent;
+        animation: printed-text11 6s ease-out 71s;
+    }
+
+    &__row--12 {
+        width: 23ch;
+        color: transparent;
+        animation: printed-text12 4s ease-out 78s;
+    }
+
+    &__row--13 {
+        width: 56ch;
+        color: transparent;
+        animation: printed-text13 8s ease-out 83s;
+    }
+
+    &__row--14 {
+        width: 53ch;
+        color: transparent;
+        animation: printed-text14 8s ease-out 92s;
+    }
+
+    &__row--15 {
+        width: 33ch;
+        color: transparent;
+        animation: printed-text15 5s ease-out 101s;
+    }
+
+    &__row--16 {
+        width: 36ch;
+        color: transparent;
+        animation: printed-text16 5s ease-out 107s;
+    }
+
+    &__row--17 {
+        width: 62ch;
+        color: transparent;
+        animation: printed-text17 9s ease-out 113s;
+    }
+
+    &__row--18 {
+        width: 34ch;
+        color: transparent;
+        animation: printed-text18 5s ease-out 123s;
+    }
+
+    &__row--19 {
+        width: 35ch;
+        color: transparent;
+        animation: printed-text19 5s ease-out 129s;
+    }
+
+    &__row--20 {
+        width: 52ch;
+        color: transparent;
+        animation: printed-text20 8s ease-out 135s;
+    }
+
+    &__row--21 {
+        width: 67ch;
+        color: transparent;
+        animation: printed-text21 9s ease-out 144s;
+    }
+}
+
+@keyframes printed-text1 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 22ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 23ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text2 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 25ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 26ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text3 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 43ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 44ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text4 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 23ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 24ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text5 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 69ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 70ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text6 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 51ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 52ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text7 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 21ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 22ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text8 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 38ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 39ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text9 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 23ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 24ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text10 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 42ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 43ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text11 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 36ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 37ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text12 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 22ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 23ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text13 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 55ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 56ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text14 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 52ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 53ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text15 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 32ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 33ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text16 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 35ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 36ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text17 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 61ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 62ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text18 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 33ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 34ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text19 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 34ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 35ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text20 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 51ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 52ch;
+        color: transparent;
+    }
+}
+
+@keyframes printed-text21 {
+    from {
+        width: 0;
+        color: transparent;
+    }
+    1% {
+        width: 1ch;
+        color: #0c00ff;
+    }
+    99% {
+        width: 66ch;
+        color: #0c00ff;
+    }
+    to {
+        width: 67ch;
+        color: transparent;
+    }
+}

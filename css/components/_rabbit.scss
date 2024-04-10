@@ -1,0 +1,65 @@
+.rabbit {
+    &__character {
+        position: absolute;
+        bottom: 31%;
+        right: 39%;
+        width: 10%;
+        height: 10%;
+        background-image: url("../images/rabbit/rabbit-start.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(0.7);
+        animation: rabbitWalk 1s step-start infinite, rabbitScalePath 40s linear infinite;
+        z-index: 1000;
+    }
+}
+
+@keyframes rabbitWalk {
+    0% {
+        background-image: url("../images/rabbit/rabbit-start.png");
+    }
+
+    25% {
+        background-image: url("../images/rabbit/rabbit-end.png");
+    }
+
+    50% {
+        background-image: url("../images/rabbit/rabbit-start.png");
+    }
+
+    75% {
+        background-image: url("../images/rabbit/rabbit-end.png");
+    }
+}
+
+@keyframes rabbitScalePath {
+    0% {
+        bottom: 31%;
+        right: 39%;
+        transform: scale(0.5);
+    }
+
+    25% {
+        bottom: 32%;
+        right: 47%;
+        transform: scale(0.7);
+    }
+    
+    50% {
+        bottom: 29%;
+        right: 50%;
+        transform: scale(0.9);
+    }
+
+    75% {
+        bottom: 20%;
+        right: 43%;
+        transform: scale(1.1);
+    }
+
+    100% {
+        bottom: 11%;
+        right: 54%;
+        transform: scale(1.3);
+    }
+}
