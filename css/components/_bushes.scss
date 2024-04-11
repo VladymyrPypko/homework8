@@ -22,7 +22,7 @@
         background-image: url("../images/nature/bushes/bush-2.png");
         background-repeat: no-repeat;
         background-size: contain;
-        animation: foxBushSlideInLeft 59s ease;
+        animation: foxBushSlideInLeft 60s ease;
         z-index: 6400;
     }
 
@@ -42,14 +42,14 @@
 
     &__squirrel-bush {
         position: absolute;
-        left: 82%;
+        left: -30%;
         bottom: 35%;
         width: 35%;
         height: 35%;
         background-image: url("../images/nature/bushes/bush-3.png");
         background-repeat: no-repeat;
         background-size: contain;
-        animation: squirrelBushSlideInLeft 102s ease;
+        animation: squirrelBushSlideInLeft 104s ease;
         z-index: 6300;
     }
 
@@ -62,7 +62,7 @@
         background-image: url("../images/nature/bushes/bush-5.png");
         background-repeat: no-repeat;
         background-size: contain;
-        animation: beaversBushSlideInright 130s ease-in-out;
+        animation: beaversBushSlideInright 131s ease-in-out;
         z-index: 6200;
     }
 }

@@ -8,6 +8,8 @@
         background-image: url("../images/squirrel/hollow.png");
         background-repeat: no-repeat;
         background-size: contain;
+        transform: translateY(0) translateX(0) scale(1);
+        animation: hollowScale 2s linear 126s 2;
         z-index: 3000;
     }
 
@@ -40,5 +42,19 @@
 
     75% {
         background-image: url("../images/squirrel/squirrel-eating-end.png");
+    }
+}
+
+@keyframes hollowScale {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-15px) translateX(15px) scale(1.3);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
     }
 }
