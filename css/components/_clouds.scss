@@ -24,13 +24,13 @@
 
 .cloud-speech {
     position: absolute;
-    top: -1%;
+    top: 10px;
     left: -100%;
     animation: speechCloud 154s linear 0.5s;
     z-index: 8000;
 
     &__image {
-        width: 100%;
+        min-width: 100%;
     }
 }
 
@@ -88,13 +88,13 @@
     }
 
     1% {
-        top: -1%;
-        left: 6%;
+        top: 1px;
+        left: 150px;
     }
 
     99% {
-        top: -1%;
-        left: 6%;
+        top: 1px;
+        left: 150px;
     }
 
     100% {
