@@ -8,8 +8,7 @@
         background-image: url("../images/fox/burrow.png");
         background-repeat: no-repeat;
         background-size: contain;
-        animation: burrowSlideInRight 1s ease-out 59.5s;
-        z-index: 700;
+        z-index: 500;
     }
 
     &__character {
@@ -22,8 +21,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         transform: translateY(0);
-        animation: foxSlideInRight 1s ease-out 59s, foxUpDown 2s ease-in-out infinite;
-        z-index: 800;
+        animation: foxUpDown 2s ease-in-out infinite;
+        z-index: 4900;
     }
 
     &__bush-right {
@@ -55,30 +54,6 @@
     }
 }
 
-@keyframes burrowSlideInRight {
-    from {
-        bottom: 10%;
-        right: -50%;
-    }
-
-    to {
-        bottom: 10%;
-        right: 5%;
-    }
-}
-
-@keyframes foxSlideInRight {
-    from {
-        bottom: 3%;
-        right: -20%;
-    }
-
-    to {
-        bottom: 3%;
-        right: 15%;
-    }
-}
-
 @keyframes foxUpDown {
     from {
         transform: translateY(0);
@@ -99,7 +74,7 @@
     }
 
     25% {
-        transform: rotateZ(-4deg);
+        transform: rotateZ(-5deg);
     }
 
     50% {
@@ -107,6 +82,6 @@
     }
 
     75% {
-        transform: rotateZ(4deg);
+        transform: rotateZ(5deg);
     }
 }

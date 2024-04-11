@@ -1,0 +1,174 @@
+// z-index 6000-6500
+.bushes {
+    &__woodpecker-bush {
+        position: absolute;
+        left: -20%;
+        bottom: 30%;
+        width: 30%;
+        height: 30%;
+        background-image: url("../images/nature/bushes/bush-1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: woodpeckerBushSlideInLeft 47s ease;
+        z-index: 6100;
+    }
+
+    &__fox-bush {
+        position: absolute;
+        left: -30%;
+        bottom: 3%;
+        width: 50%;
+        height: 50%;
+        background-image: url("../images/nature/bushes/bush-2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: foxBushSlideInLeft 59s ease;
+        z-index: 6400;
+    }
+
+    &__rabbit-bush {
+        position: absolute;
+        right: 34%;
+        bottom: 22%;
+        width: 10%;
+        height: 10%;
+        background-image: url("../images/nature/bushes/bush-4.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(1);
+        animation: rabbitBushScale 79s ease-in-out;
+        z-index: 6000;
+    }
+
+    &__squirrel-bush {
+        position: absolute;
+        left: 82%;
+        bottom: 35%;
+        width: 35%;
+        height: 35%;
+        background-image: url("../images/nature/bushes/bush-3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: squirrelBushSlideInLeft 102s ease;
+        z-index: 6300;
+    }
+
+    &__beavers-bush {
+        position: absolute;
+        left: 18%;
+        bottom: 14%;
+        width: 22%;
+        height: 22%;
+        background-image: url("../images/nature/bushes/bush-5.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: beaversBushSlideInright 130s ease-in-out;
+        z-index: 6200;
+    }
+}
+
+@keyframes woodpeckerBushSlideInLeft {
+    from {
+        left: -20%;
+        bottom: 30%;
+    }
+
+    1% {
+        left: 5%;
+        bottom: 30%;
+    }
+
+    99% {
+        left: 5%;
+        bottom: 30%;
+    }
+
+    to {
+        left: -20%;
+        bottom: 30%;
+    }
+}
+
+@keyframes foxBushSlideInLeft {
+    from {
+        left: -30%;
+        bottom: 3%;
+    }
+
+    1% {
+        left: 68%;
+        bottom: 3%;
+    }
+
+    99% {
+        left: 68%;
+        bottom: 3%;
+    }
+
+    to {
+        left: -30%;
+        bottom: 3%;
+    }
+}
+
+@keyframes rabbitBushScale {
+    from {
+        transform: scale(1);
+    }
+
+    1% {
+        transform: scale(6);
+    }
+
+    99% {
+        transform: scale(6);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes squirrelBushSlideInLeft {
+    from {
+        left: -30%;
+        bottom: 35%;
+    }
+
+    1% {
+        left: 82%;
+        bottom: 35%;
+    }
+
+    99% {
+        left: 82%;
+        bottom: 35%;
+    }
+
+    to {
+        left: -30%;
+        bottom: 35%;
+    }
+}
+
+@keyframes beaversBushSlideInright {
+    from {
+        left: 18%;
+        bottom: 14%;
+    }
+
+    1% {
+        left: 7%;
+        bottom: 14%;
+    }
+
+    99% {
+        left: 7%;
+        bottom: 14%;
+    }
+
+    to {
+        left: 18%;
+        bottom: 14%;
+    }
+}

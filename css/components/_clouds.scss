@@ -2,25 +2,23 @@
     position: absolute;
     top: 3%;
     left: -10%;
-    z-index: 1;
     animation: CloudMove 15s linear infinite;
+    z-index: 80;
 
     &__image {
-        width: 25%;
-        min-width: 180px;
+        width: 150px;
     }
 }
 
 .cloud-lg {
     position: absolute;
     top: 4%;
-    left: -10%;
-    z-index: 2;
+    left: -15%;
     animation: CloudMove 20s linear 0.5s infinite;
+    z-index: 90;
 
     &__image {
-        width: 15%;
-        min-width: 200px;
+        width: 180px;
     }
 }
 
@@ -29,7 +27,7 @@
     top: -1%;
     left: -100%;
     animation: speechCloud 154s linear 0.5s;
-    z-index: 800;
+    z-index: 8000;
 
     &__image {
         width: 100%;

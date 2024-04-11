@@ -3,12 +3,12 @@
         position: absolute;
         bottom: 45%;
         right: 0.5%;
-        z-index: 700;
         width: 12%;
         height: 12%;
         background-image: url("../images/squirrel/hollow.png");
         background-repeat: no-repeat;
         background-size: contain;
+        z-index: 3000;
     }
 
     &__character {
@@ -21,7 +21,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         animation: carrotMove 2s step-start infinite;
-        z-index: 1000;
+        z-index: 4600;
     }
 }
 

@@ -6,7 +6,7 @@
     background-color: #ffde00;
     border: 1px solid #000;
     border-radius: 50%;
-    z-index: 9000;
+    z-index: 9200;
 
     &__eyes {
         position: absolute;
@@ -18,7 +18,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         animation: eyesMove 1s linear 2s infinite;
-        z-index: 9100;
+        z-index: 9300;
     }
 
     &__mouth {
@@ -31,7 +31,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         animation: mouthMove 1.2s step-end 2s infinite;
-        z-index: 9100;
+        z-index: 9300;
     }
 
     &__lights {
@@ -44,8 +44,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         transform: scale(1);
-        animation: lights-rotation 2s ease infinite;
-        z-index: 200;
+        animation: lights-rotation 3s linear infinite;
+        z-index: 9100;
     }
 }
 
@@ -81,14 +81,29 @@
     0% {
         transform: scale(1);
     }
-    25% {
+    12% {
         transform: scale(0.9);
     }
-    50% {
+    24% {
+        transform: scale(0.8);
+    }
+    36% {
+        transform: scale(0.9);
+    }
+    48% {
         transform: scale(1);
     }
-    75% {
+    60% {
         transform: scale(1.1);
+    }
+    72% {
+        transform: scale(1.2);
+    }
+    84% {
+        transform: scale(1.1);
+    }
+    96% {
+        transform: scale(1);
     }
 }
 

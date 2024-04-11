@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   animation: beaverFemaleMove 1s step-start infinite;
-  z-index: 690;
+  z-index: 4900;
 }
 
 @keyframes beaverFemaleMove {
@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   animation: stickMove 1s step-start infinite;
-  z-index: 700;
+  z-index: 5000;
 }
 
 @keyframes stickMove {
@@ -61,8 +61,7 @@
   background-image: url("../images/fox/burrow.png");
   background-repeat: no-repeat;
   background-size: contain;
-  animation: burrowSlideInRight 1s ease-out 59.5s;
-  z-index: 700;
+  z-index: 500;
 }
 .fox__character {
   position: absolute;
@@ -74,8 +73,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(0);
-  animation: foxSlideInRight 1s ease-out 59s, foxUpDown 2s ease-in-out infinite;
-  z-index: 800;
+  animation: foxUpDown 2s ease-in-out infinite;
+  z-index: 4900;
 }
 .fox__bush-right {
   position: absolute;
@@ -104,26 +103,6 @@
   z-index: 720;
 }
 
-@keyframes burrowSlideInRight {
-  from {
-    bottom: 10%;
-    right: -50%;
-  }
-  to {
-    bottom: 10%;
-    right: 5%;
-  }
-}
-@keyframes foxSlideInRight {
-  from {
-    bottom: 3%;
-    right: -20%;
-  }
-  to {
-    bottom: 3%;
-    right: 15%;
-  }
-}
 @keyframes foxUpDown {
   from {
     transform: translateY(0);
@@ -140,13 +119,13 @@
     transform: rotateZ(0);
   }
   25% {
-    transform: rotateZ(-4deg);
+    transform: rotateZ(-5deg);
   }
   50% {
     transform: rotateZ(0);
   }
   75% {
-    transform: rotateZ(4deg);
+    transform: rotateZ(5deg);
   }
 }
 .rabbit__character {
@@ -160,7 +139,7 @@
   background-size: contain;
   transform: scale(0.7);
   animation: rabbitWalk 1s step-start infinite, rabbitScalePath 40s linear infinite;
-  z-index: 1000;
+  z-index: 4800;
 }
 
 @keyframes rabbitWalk {
@@ -208,12 +187,12 @@
   position: absolute;
   bottom: 45%;
   right: 0.5%;
-  z-index: 700;
   width: 12%;
   height: 12%;
   background-image: url("../images/squirrel/hollow.png");
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 3000;
 }
 .squirrel__character {
   position: absolute;
@@ -225,7 +204,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   animation: carrotMove 2s step-start infinite;
-  z-index: 1000;
+  z-index: 4600;
 }
 
 @keyframes carrotMove {
@@ -250,7 +229,7 @@
   background-color: #ffde00;
   border: 1px solid #000;
   border-radius: 50%;
-  z-index: 9000;
+  z-index: 9200;
 }
 .sun__eyes {
   position: absolute;
@@ -262,7 +241,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   animation: eyesMove 1s linear 2s infinite;
-  z-index: 9100;
+  z-index: 9300;
 }
 .sun__mouth {
   position: absolute;
@@ -274,7 +253,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   animation: mouthMove 1.2s step-end 2s infinite;
-  z-index: 9100;
+  z-index: 9300;
 }
 .sun__lights {
   position: absolute;
@@ -286,8 +265,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   transform: scale(1);
-  animation: lights-rotation 2s ease infinite;
-  z-index: 200;
+  animation: lights-rotation 3s linear infinite;
+  z-index: 9100;
 }
 
 .sun:hover {
@@ -320,14 +299,29 @@
   0% {
     transform: scale(1);
   }
-  25% {
+  12% {
     transform: scale(0.9);
   }
-  50% {
+  24% {
+    transform: scale(0.8);
+  }
+  36% {
+    transform: scale(0.9);
+  }
+  48% {
     transform: scale(1);
   }
-  75% {
+  60% {
     transform: scale(1.1);
+  }
+  72% {
+    transform: scale(1.2);
+  }
+  84% {
+    transform: scale(1.1);
+  }
+  96% {
+    transform: scale(1);
   }
 }
 @keyframes sun-rotation {
@@ -340,40 +334,29 @@
 }
 .woodpecker__character {
   position: absolute;
-  bottom: 35%;
+  bottom: 37%;
   left: 10%;
   width: 15%;
   height: 12%;
   background-image: url("../images/woodpecker/woodpecker-laughing.png");
   background-repeat: no-repeat;
   background-size: contain;
-  animation: woodpeckerSlideInLeft 1s ease-out 48s, woodpecker-rotation 3s step-start infinite;
+  animation: woodpecker-rotation 3s step-start infinite;
   transform: rotateZ(0deg);
-  z-index: 700;
+  z-index: 4700;
 }
 .woodpecker__cones {
   position: absolute;
-  bottom: 35%;
+  bottom: 37%;
   left: 10%;
   width: 2%;
   height: 2%;
   background-image: url("../images/woodpecker/cones.png");
   background-repeat: no-repeat;
   background-size: contain;
-  animation: conesSlideInLeft 1s ease-out 48.5s;
-  z-index: 690;
+  z-index: 3000;
 }
 
-@keyframes woodpeckerSlideInLeft {
-  from {
-    bottom: 35%;
-    left: -20%;
-  }
-  to {
-    bottom: 35%;
-    left: 10%;
-  }
-}
 @keyframes woodpecker-rotation {
   0% {
     background-image: url("../images/woodpecker/woodpecker-laughing.png");
@@ -408,38 +391,26 @@
     transform: rotateZ(-8deg);
   }
 }
-@keyframes conesSlideInLeft {
-  from {
-    bottom: 35%;
-    left: -20%;
-  }
-  to {
-    bottom: 35%;
-    left: 10%;
-  }
-}
 .cloud-sm {
   position: absolute;
   top: 3%;
   left: -10%;
-  z-index: 1;
   animation: CloudMove 15s linear infinite;
+  z-index: 80;
 }
 .cloud-sm__image {
-  width: 25%;
-  min-width: 180px;
+  width: 150px;
 }
 
 .cloud-lg {
   position: absolute;
   top: 4%;
-  left: -10%;
-  z-index: 2;
+  left: -15%;
   animation: CloudMove 20s linear 0.5s infinite;
+  z-index: 90;
 }
 .cloud-lg__image {
-  width: 15%;
-  min-width: 200px;
+  width: 180px;
 }
 
 .cloud-speech {
@@ -447,7 +418,7 @@
   top: -1%;
   left: -100%;
   animation: speechCloud 154s linear 0.5s;
-  z-index: 800;
+  z-index: 8000;
 }
 .cloud-speech__image {
   width: 100%;
@@ -517,6 +488,154 @@
     left: -100%;
   }
 }
+.bushes__woodpecker-bush {
+  position: absolute;
+  left: -20%;
+  bottom: 30%;
+  width: 30%;
+  height: 30%;
+  background-image: url("../images/nature/bushes/bush-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: woodpeckerBushSlideInLeft 47s ease;
+  z-index: 6100;
+}
+.bushes__fox-bush {
+  position: absolute;
+  left: -30%;
+  bottom: 3%;
+  width: 50%;
+  height: 50%;
+  background-image: url("../images/nature/bushes/bush-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: foxBushSlideInLeft 59s ease;
+  z-index: 6400;
+}
+.bushes__rabbit-bush {
+  position: absolute;
+  right: 34%;
+  bottom: 22%;
+  width: 10%;
+  height: 10%;
+  background-image: url("../images/nature/bushes/bush-4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(1);
+  animation: rabbitBushScale 79s ease-in-out;
+  z-index: 6000;
+}
+.bushes__squirrel-bush {
+  position: absolute;
+  left: 82%;
+  bottom: 35%;
+  width: 35%;
+  height: 35%;
+  background-image: url("../images/nature/bushes/bush-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: squirrelBushSlideInLeft 102s ease;
+  z-index: 6300;
+}
+.bushes__beavers-bush {
+  position: absolute;
+  left: 18%;
+  bottom: 14%;
+  width: 22%;
+  height: 22%;
+  background-image: url("../images/nature/bushes/bush-5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: beaversBushSlideInright 130s ease-in-out;
+  z-index: 6200;
+}
+
+@keyframes woodpeckerBushSlideInLeft {
+  from {
+    left: -20%;
+    bottom: 30%;
+  }
+  1% {
+    left: 5%;
+    bottom: 30%;
+  }
+  99% {
+    left: 5%;
+    bottom: 30%;
+  }
+  to {
+    left: -20%;
+    bottom: 30%;
+  }
+}
+@keyframes foxBushSlideInLeft {
+  from {
+    left: -30%;
+    bottom: 3%;
+  }
+  1% {
+    left: 68%;
+    bottom: 3%;
+  }
+  99% {
+    left: 68%;
+    bottom: 3%;
+  }
+  to {
+    left: -30%;
+    bottom: 3%;
+  }
+}
+@keyframes rabbitBushScale {
+  from {
+    transform: scale(1);
+  }
+  1% {
+    transform: scale(6);
+  }
+  99% {
+    transform: scale(6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes squirrelBushSlideInLeft {
+  from {
+    left: -30%;
+    bottom: 35%;
+  }
+  1% {
+    left: 82%;
+    bottom: 35%;
+  }
+  99% {
+    left: 82%;
+    bottom: 35%;
+  }
+  to {
+    left: -30%;
+    bottom: 35%;
+  }
+}
+@keyframes beaversBushSlideInright {
+  from {
+    left: 18%;
+    bottom: 14%;
+  }
+  1% {
+    left: 7%;
+    bottom: 14%;
+  }
+  99% {
+    left: 7%;
+    bottom: 14%;
+  }
+  to {
+    left: 18%;
+    bottom: 14%;
+  }
+}
 .text-content__row {
   position: absolute;
   top: 6%;
@@ -527,7 +646,7 @@
   white-space: nowrap;
   overflow: hidden;
   animation: flashing-border 0.75s step-end infinite;
-  z-index: 850;
+  z-index: 9900;
 }
 .text-content__row--1 {
   width: 23ch;
@@ -1041,7 +1160,7 @@ body {
   bottom: -1%;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 .wrapper .nature-background__image {
   width: 100%;
